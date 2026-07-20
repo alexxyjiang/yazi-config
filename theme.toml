@@ -1,0 +1,95 @@
+# Theme: Tokyo Night inspired theme - aligned with current zsh ls colors
+
+[mode]
+normal_alt = { fg = "blue", bg = "reset", bold = true }
+normal_main = { fg = "black", bg = "blue", bold = true }
+select_alt = { fg = "green", bg = "reset", bold = true }
+select_main = { fg = "black", bg = "green", bold = true }
+unset_alt = { fg = "red", bg = "reset", bold = true }
+unset_main = { fg = "black", bg = "red", bold = true }
+
+[status]
+overall = { fg = "reset", bg = "reset" }
+progress_error = { fg = "white", bg = "red", bold = true }
+progress_label = { fg = "white", bg = "red", bold = true }
+progress_normal = { fg = "white", bg = "red", bold = true }
+sep_left = { open = "", close = "" }
+sep_right = { open = "", close = "" }
+
+[filetype]
+rules = [
+  # Archives
+  { mime = "application/gzip", fg = "red" },
+  { mime = "application/x-7z-compressed", fg = "red" },
+  { mime = "application/x-bzip2", fg = "red" },
+  { mime = "application/x-rar", fg = "red" },
+  { mime = "application/x-tar", fg = "red" },
+  { mime = "application/x-xz", fg = "red" },
+  { mime = "application/zip", fg = "red" },
+
+  # Code and text
+  { url = "*.c", fg = "cyan" },
+  { url = "*.cc", fg = "cyan" },
+  { url = "*.cpp", fg = "cyan" },
+  { url = "*.css", fg = "cyan" },
+  { url = "*.cxx", fg = "cyan" },
+  { url = "*.h", fg = "cyan" },
+  { url = "*.hpp", fg = "cyan" },
+  { url = "*.htm", fg = "cyan" },
+  { url = "*.html", fg = "cyan" },
+  { url = "*.hxx", fg = "cyan" },
+  { url = "*.java", fg = "cyan" },
+  { url = "*.js", fg = "cyan" },
+  { url = "*.json", fg = "cyan" },
+  { url = "*.jsx", fg = "cyan" },
+  { url = "*.kt", fg = "cyan" },
+  { url = "*.kts", fg = "cyan" },
+  { url = "*.lua", fg = "cyan" },
+  { url = "*.php", fg = "cyan" },
+  { url = "*.pkb", fg = "cyan" },
+  { url = "*.pks", fg = "cyan" },
+  { url = "*.pls", fg = "cyan" },
+  { url = "*.sbt", fg = "cyan" },
+  { url = "*.sc", fg = "cyan" },
+  { url = "*.scala", fg = "cyan" },
+  { url = "*.sql", fg = "cyan" },
+  { url = "*.ts", fg = "cyan" },
+  { url = "*.tsx", fg = "cyan" },
+  { url = "*.xml", fg = "cyan" },
+  { url = "*.yaml", fg = "cyan" },
+  { url = "*.yml", fg = "cyan" },
+  { mime = "application/javascript", fg = "cyan" },
+  { mime = "application/json", fg = "cyan" },
+  { mime = "application/sql", fg = "cyan" },
+  { mime = "application/typescript", fg = "cyan" },
+  { mime = "application/x-yaml", fg = "cyan" },
+  { mime = "application/xml", fg = "cyan" },
+  { mime = "application/yaml", fg = "cyan" },
+  { mime = "text/css", fg = "cyan" },
+  { mime = "text/html", fg = "cyan" },
+  { mime = "text/javascript", fg = "cyan" },
+  { mime = "text/typescript", fg = "cyan" },
+  { mime = "text/x-c", fg = "cyan" },
+  { mime = "text/x-c++", fg = "cyan" },
+  { mime = "text/x-java", fg = "cyan" },
+  { mime = "text/x-kotlin", fg = "cyan" },
+  { mime = "text/x-lua", fg = "cyan" },
+  { mime = "text/x-php", fg = "cyan" },
+  { mime = "text/x-scala", fg = "cyan" },
+  { mime = "text/x-sql", fg = "cyan" },
+  { mime = "text/x-yaml", fg = "cyan" },
+  { mime = "text/xml", fg = "cyan" },
+  { mime = "text/yaml", fg = "cyan" },
+  { mime = "text/*", fg = "reset" },
+
+  # Documents
+  { mime = "application/*doc*", fg = "green" },
+  { mime = "application/*presentation*", fg = "green" },
+  { mime = "application/*sheet*", fg = "green" },
+  { mime = "application/pdf", fg = "cyan" },
+
+  # Media
+  { mime = "audio/*", fg = "yellow" },
+  { mime = "image/*", fg = "magenta" },
+  { mime = "video/*", fg = "yellow" },
+]

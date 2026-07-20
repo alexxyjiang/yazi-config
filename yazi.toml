@@ -1,0 +1,125 @@
+[mgr]
+ratio = [1, 1, 3]
+sort_by = "natural"
+sort_sensitive = false
+sort_reverse = false
+sort_dir_first = true
+linemode = "size"
+show_hidden = true
+show_symlink = true
+scrolloff = 5
+mouse_events = ["click", "scroll"]
+title_format = "Yazi: {cwd}"
+
+[preview]
+max_width = 960
+max_height = 960
+image_filter = "lanczos3"
+image_quality = 75
+
+[opener]
+edit = [
+  { run = 'vim %s', block = true, desc = "Vim", for = "unix" },
+]
+open = [
+  { run = 'open %s', desc = "Open", for = "macos" },
+]
+reveal = [
+  { run = 'open -R %1', desc = "Reveal in Finder", for = "macos" },
+]
+
+[open]
+prepend_rules = [
+  { url = "*.c", use = ["edit", "open", "reveal"] },
+  { url = "*.cc", use = ["edit", "open", "reveal"] },
+  { url = "*.cpp", use = ["edit", "open", "reveal"] },
+  { url = "*.css", use = ["edit", "open", "reveal"] },
+  { url = "*.cxx", use = ["edit", "open", "reveal"] },
+  { url = "*.h", use = ["edit", "open", "reveal"] },
+  { url = "*.hpp", use = ["edit", "open", "reveal"] },
+  { url = "*.htm", use = ["edit", "open", "reveal"] },
+  { url = "*.html", use = ["edit", "open", "reveal"] },
+  { url = "*.hxx", use = ["edit", "open", "reveal"] },
+  { url = "*.java", use = ["edit", "open", "reveal"] },
+  { url = "*.js", use = ["edit", "open", "reveal"] },
+  { url = "*.json", use = ["edit", "open", "reveal"] },
+  { url = "*.jsx", use = ["edit", "open", "reveal"] },
+  { url = "*.kt", use = ["edit", "open", "reveal"] },
+  { url = "*.kts", use = ["edit", "open", "reveal"] },
+  { url = "*.lua", use = ["edit", "open", "reveal"] },
+  { url = "*.php", use = ["edit", "open", "reveal"] },
+  { url = "*.pkb", use = ["edit", "open", "reveal"] },
+  { url = "*.pks", use = ["edit", "open", "reveal"] },
+  { url = "*.pls", use = ["edit", "open", "reveal"] },
+  { url = "*.sbt", use = ["edit", "open", "reveal"] },
+  { url = "*.sc", use = ["edit", "open", "reveal"] },
+  { url = "*.scala", use = ["edit", "open", "reveal"] },
+  { url = "*.sql", use = ["edit", "open", "reveal"] },
+  { url = "*.ts", use = ["edit", "open", "reveal"] },
+  { url = "*.tsx", use = ["edit", "open", "reveal"] },
+  { url = "*.xml", use = ["edit", "open", "reveal"] },
+  { url = "*.yaml", use = ["edit", "open", "reveal"] },
+  { url = "*.yml", use = ["edit", "open", "reveal"] },
+  { mime = "application/javascript", use = ["edit", "open", "reveal"] },
+  { mime = "application/json", use = ["edit", "open", "reveal"] },
+  { mime = "application/sql", use = ["edit", "open", "reveal"] },
+  { mime = "application/typescript", use = ["edit", "open", "reveal"] },
+  { mime = "application/x-php", use = ["edit", "open", "reveal"] },
+  { mime = "application/x-yaml", use = ["edit", "open", "reveal"] },
+  { mime = "application/xml", use = ["edit", "open", "reveal"] },
+  { mime = "application/yaml", use = ["edit", "open", "reveal"] },
+  { mime = "text/css", use = ["edit", "open", "reveal"] },
+  { mime = "text/html", use = ["edit", "open", "reveal"] },
+  { mime = "text/javascript", use = ["edit", "open", "reveal"] },
+  { mime = "text/typescript", use = ["edit", "open", "reveal"] },
+  { mime = "text/x-c", use = ["edit", "open", "reveal"] },
+  { mime = "text/x-c++", use = ["edit", "open", "reveal"] },
+  { mime = "text/x-java", use = ["edit", "open", "reveal"] },
+  { mime = "text/x-kotlin", use = ["edit", "open", "reveal"] },
+  { mime = "text/x-lua", use = ["edit", "open", "reveal"] },
+  { mime = "text/x-php", use = ["edit", "open", "reveal"] },
+  { mime = "text/x-scala", use = ["edit", "open", "reveal"] },
+  { mime = "text/x-sql", use = ["edit", "open", "reveal"] },
+  { mime = "text/x-yaml", use = ["edit", "open", "reveal"] },
+  { mime = "text/xml", use = ["edit", "open", "reveal"] },
+  { mime = "text/yaml", use = ["edit", "open", "reveal"] },
+  { mime = "text/*", use = ["edit", "open", "reveal"] },
+]
+
+[tasks]
+bizarre_retry = 5
+suppress_preload = true
+
+[plugin]
+prepend_previewers = [
+  { url = "*.c", run = "code" },
+  { url = "*.cc", run = "code" },
+  { url = "*.cpp", run = "code" },
+  { url = "*.css", run = "code" },
+  { url = "*.cxx", run = "code" },
+  { url = "*.h", run = "code" },
+  { url = "*.hpp", run = "code" },
+  { url = "*.htm", run = "code" },
+  { url = "*.html", run = "code" },
+  { url = "*.hxx", run = "code" },
+  { url = "*.java", run = "code" },
+  { url = "*.js", run = "code" },
+  { url = "*.json", run = "json" },
+  { url = "*.jsx", run = "code" },
+  { url = "*.kt", run = "code" },
+  { url = "*.kts", run = "code" },
+  { url = "*.lua", run = "code" },
+  { url = "*.php", run = "code" },
+  { url = "*.pkb", run = "code" },
+  { url = "*.pks", run = "code" },
+  { url = "*.pls", run = "code" },
+  { url = "*.sbt", run = "code" },
+  { url = "*.sc", run = "code" },
+  { url = "*.scala", run = "code" },
+  { url = "*.sql", run = "code" },
+  { url = "*.ts", run = "code" },
+  { url = "*.tsx", run = "code" },
+  { url = "*.xml", run = "code" },
+  { url = "*.yaml", run = "code" },
+  { url = "*.yml", run = "code" },
+]
