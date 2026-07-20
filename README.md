@@ -15,8 +15,10 @@ Yazi's local config path is therefore:
 
 ## Repository Structure
 
+The repository root maps directly to `~/.config/yazi/`.
+
 ```
-yazi-config/
+~/.config/yazi/   (repo root)
 ├── yazi.toml       # General behavior settings
 ├── keymap.toml     # Key-binding overrides
 └── theme.toml      # Color theme settings
@@ -26,9 +28,9 @@ yazi-config/
 
 | Path | Description |
 |------|-------------|
-| `yazi.toml` | General behavior settings used under `~/.config/yazi` |
-| `keymap.toml` | Key-binding overrides used under `~/.config/yazi` |
-| `theme.toml` | Color theme settings used under `~/.config/yazi` |
+| `yazi.toml` | General behavior settings |
+| `keymap.toml` | Key-binding overrides |
+| `theme.toml` | Color theme settings |
 
 ## Setup
 
