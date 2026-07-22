@@ -27,6 +27,15 @@ rules = [
   { mime = "application/x-xz", fg = "blue" },
   { mime = "application/zip", fg = "blue" },
 
+  # Data
+  { url = "*.csv", fg = "magenta" },
+  { url = "*.psv", fg = "magenta" },
+  { url = "*.tab", fg = "magenta" },
+  { url = "*.tsv", fg = "magenta" },
+  { mime = "application/tab-separated-values", fg = "magenta" },
+  { mime = "text/csv", fg = "magenta" },
+  { mime = "text/tab-separated-values", fg = "magenta" },
+
   # Code and text
   { url = "*.bash", fg = "cyan" },
   { url = "*.c", fg = "cyan" },
